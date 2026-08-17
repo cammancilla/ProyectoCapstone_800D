@@ -1,7 +1,7 @@
 Repositorio de evidencias de proyecto semestral de Capstone Sección 800D año 2026.
-Nombre Proyecto:
-Integrantes: Camila Mancilla , Vicente Montenegro y Gladys Espinoza
-Docente: Aldo Alberto Martinez
-Sección: 800D
-Sede: Antonio Varas 
-Año: 2026
+Nombre Proyecto: <br>
+Integrantes: Camila Mancilla , Vicente Montenegro y Gladys Espinoza <br>
+Docente: Aldo Alberto Martinez <br>
+Sección: 800D <br>
+Sede: Antonio Varas <br>
+Año: 2026 <br>
