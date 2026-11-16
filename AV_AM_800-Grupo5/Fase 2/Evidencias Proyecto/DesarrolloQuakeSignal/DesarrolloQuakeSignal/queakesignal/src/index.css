@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import 'tailwindcss';
+
+@variant dark (&:where(.dark, .dark *));
+
+html,
+body,
+#root {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+html.dark,
+html.dark body,
+html.dark #root {
+  background-color: #0b1120;
+  color: #f8fafc;
+}
+
+html.dark input,
+html.dark select,
+html.dark textarea {
+  color-scheme: dark;
+}
+
+* {
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+@theme inline {
+  --color-navy-950: #0a0f1e;
+  --color-navy-900: #0f172a;
+  --color-navy-800: #1e2942;
+  --color-navy-700: #253352;
+  --color-navy-600: #2d4060;
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-alert-red: #dc2626;
+  --color-alert-red-light: #fee2e2;
+  --color-status-green: #16a34a;
+  --color-status-yellow: #d97706;
+  --color-status-blue: #2563eb;
+}
+
+/* Animaciones de radar para alertas y nodos */
+@keyframes radar-pulse {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.85;
+  }
+  60% {
+    transform: scale(2.4);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(3.2);
+    opacity: 0;
+  }
+}
+
+.radar-wave-1 {
+  animation: radar-pulse 2.2s cubic-bezier(0.2, 0.4, 0.4, 1) infinite;
+}
+
+.radar-wave-2 {
+  animation: radar-pulse 2.2s cubic-bezier(0.2, 0.4, 0.4, 1) infinite 1.1s;
+}
+
+/* Estilos para el mapa Leaflet personalizado */
+.quakesignal-map-container {
+  position: relative;
+}
+
+.leaflet-popup-content-wrapper {
+  background: rgba(15, 23, 42, 0.96) !important;
+  color: #f1f5f9 !important;
+  border-radius: 0.75rem !important;
+  box-shadow: 0 12px 30px -4px rgba(0, 0, 0, 0.45) !important;
+  border: 1px solid rgba(71, 85, 105, 0.5) !important;
+  backdrop-filter: blur(10px) !important;
+  padding: 0 !important;
+}
+
+.leaflet-popup-content {
+  margin: 12px 14px !important;
+  line-height: 1.4 !important;
+}
+
+.leaflet-popup-tip {
+  background: rgba(15, 23, 42, 0.96) !important;
+}
+
+.leaflet-container {
+  font-family: 'Inter', sans-serif !important;
+}
+
+.custom-div-icon {
+  background: transparent !important;
+  border: none !important;
+}
